@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+    
+        table {
+            width: 100%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table, tr, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr:nth-child(even) {
+            background-color: gainsboro;
+        }
+
+        td, th {
+            padding: 8px;
+        }
+
+        th {
+            background-color: darksalmon;
+        }
+
+        .bg-green {
+            background-color: lightgreen;
+        }
+
+        .bg-red {
+            background-color: lightcoral;
+        }
+
+        .name {
+            background-color: coral;
+        }
+
+        tfoot {
+            background-color: darksalmon;
+        }
+
+        .dash-top {
+            border-top: 3px dashed red;
+        }
+
+        .dash-bottom {
+            border-bottom: 3px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">ID</th>
+                <th colspan="2">Memership Dates</th>
+                <th rowspan="2">Balance</th>
+            </tr>
+            <tr>
+                <th class="bg-green">Joined</th>
+                <th class="bg-red">Cancelled</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="name">Dara</td>
+                <td>12345</td>
+                <td>June, 13 2025</td>
+                <td>N/A</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td class="name">Kanha</td>
+                <td>9999</td>
+                <td>May, 13 2025</td>
+                <td>May, 20 2025</td>
+                <td>37.00</td>
+            </tr>
+            <tr class="dash-bottom">
+                <td class="name dash-bottom">Tola</td>
+                <td class="dash-bottom">8888</td>
+                <td class="dash-bottom">May, 13 2025</td>
+                <td class="dash-bottom">May, 13 2025</td>
+                <td class="dash-bottom">45.90</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr class="dash-top">
+                <td class="dash-top" colspan="4">Total Balance</td>
+                <td class="dash-top">190.90</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
